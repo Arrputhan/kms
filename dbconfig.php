@@ -1,7 +1,10 @@
 <?php
-$host = 'localhost';
-$username = 'root';
-$password = 'arrpooja';
-$database = 'ebike';
-$dbconfig = mysqli_connect($host,$username,$password,$database);
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["localhost"];
+$username = $url["root"];
+$password = $url["arrpooja"];
+$db = substr($url["ebike"], 1);
+
+$dbconfig = new mysqli($server, $username, $password, $db);
 ?>
