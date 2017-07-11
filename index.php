@@ -7,7 +7,7 @@
 	<title>Kilometres</title>
 </head>
 <body style="background-color: pink;">
-<form action="kms.php" method="post">
+<form action="index.php" method="post">
 <div class="container">
 <img src="2.jpg">
 <div style="margin-top: 100px;" class="form-group">
